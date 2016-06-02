@@ -42,7 +42,9 @@ ul {
 li {
 	display: inline;
 	padding: 0 5vh;
+	font-weight: bolder;
 }
+
 
 .EDA {
 	text-decoration: line-through;
