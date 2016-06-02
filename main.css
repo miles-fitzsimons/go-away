@@ -24,6 +24,7 @@ h2 {
 }
 
 nav {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -32,6 +33,19 @@ nav {
 	height: 10vh;
 	margin-bottom: 5vh;
 	width: 100%;
+	z-index: 1;
+}
+
+#navLogo {
+	position: absolute;
+	left: 6vw;
+	margin-top: 2.5vh;
+	font-size: 3.5vh;
+	visibility: hidden;
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 2px solid #000000;
+	padding-bottom: 1vh;
 }
 
 ul {
@@ -41,7 +55,7 @@ ul {
 
 li {
 	display: inline;
-	padding: 0 5vh;
+	margin: 0 5vh;
 	font-weight: bolder;
 }
 
@@ -78,10 +92,6 @@ p {
 	background-color: #FBFBFB;
 }
 
-/*.topSection {
-	padding: 11.67vh 6.67vh 0 6.67vh;
-}
-*/
 .topScroll {
 	background-color: red;
 	position: fixed;
