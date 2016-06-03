@@ -80,4 +80,6 @@ $(document).ready(function() {
 
 
 // TO DO
-// Make Nav Bar links "active" with underline with in view
+// Tidy up email and crappy website link
+// Slow scroll 
+// Favicon?

@@ -120,4 +120,19 @@ h5 {
 
 footer {
 	height: 10vh;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	width: 100%;
+}
+
+h6 {
+	position: relative;
+	left: 6vw;
+}
+
+i {
+	position: relative;
+	left: 60vw;
+	margin: 0 0.7vw;
 }
