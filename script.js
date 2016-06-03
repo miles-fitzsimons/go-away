@@ -95,7 +95,3 @@ $(document).ready(function() {
 	});
 
 });
-
-
-// TO DO
-// Favicon?
