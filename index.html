@@ -3,6 +3,7 @@
 <head>
   <title>Go Away</title>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/4.1.1/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
@@ -22,7 +23,7 @@
     <h2>Wellington</h2>
   </div>
   <nav>
-    <a id="navLogo" href="#">go away</a>
+    <a id="navLogo" class="notEDA">go away</a>
     <ul>
       <li class="notEDA" id="aboutNav">About</li>
       <li class="notEDA" id="thoughtsNav">Thoughts</li>
@@ -36,25 +37,24 @@
   </section>
   <section class="darkBackground" id="thoughtsHead">
     <h3>Thoughts</h3>
-    <p class="content">Miles wrote a number of technical and cultural blog posts during his studies. You can read them at his crappy website.</p>
+    <p class="content">Miles wrote a number of technical and cultural blog posts during his studies. You can read them at his <a class="notEDA bodyLink" href="http://miles-fitzsimons.github.io/" target="_blank">crappy website</a>.</p>
   </section>
   <section id="contactHead">
     <h3>Contact</h3>
     <div class="content">
-      <!-- <img src="http://placehold.it/400x400" /> -->
       <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:600px;'><div id='gmap_canvas' style='height:400px;width:600px;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy template</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(-41.29690919999999,174.77421930000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-41.29690919999999,174.77421930000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Go Away</strong><br>275 Cuba Street, Wellington, New Zealand<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
       <h4>Go Away Wellington</h4>
       <h5>275 Cuba St<br>Te Aro<br>Wellington<br>6023</h5>
-      <h5>miles.fitzsimons@gmail.com</h5>
-      <h5>+64 22 032 8976</h5>
+      <h5><a class="notEDA bodyLink" href="mailto:miles.fitzsimons@gmail.com">miles.fitzsimons@gmail.com</a></h5>
+      <h5><a class="notEDA bodyLink" href="tel:+64220328976">+64 22 032 8976</a></h5>
     </div>
   </section>
   <footer class="darkBackground">
     <h6>Go Away &mdash; All Rights Reserved</h6>
-    <i class="fa fa-envelope-square fa-2x"></i>
-    <i class="fa fa-phone-square fa-2x"></i>
-    <i class="fa fa-github-square fa-2x"></i>
-    <i class="fa fa-linkedin-square fa-2x"></i>
+    <a class="bodyLink" href="mailto:miles.fitzsimons@gmail.com"><i class="fa fa-envelope-square fa-2x"></i></a>
+    <a class="bodyLink" href="tel:+64220328976"><i class="fa fa-phone-square fa-2x"></i></a>
+    <a class="bodyLink" href="https://github.com/miles-fitzsimons" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+    <a class="bodyLink" href="https://au.linkedin.com/in/miles-fitzsimons-2a325041" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
   </footer>
 </body>
 </html>

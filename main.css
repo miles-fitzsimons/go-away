@@ -65,6 +65,11 @@ li {
 	text-decoration: line-through;
 }
 
+.bodyLink {
+	text-decoration: none;
+	color: black;
+}
+
 .gap {
 	background-color: red;
 }

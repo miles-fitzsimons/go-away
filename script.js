@@ -33,21 +33,17 @@ $(document).ready(function() {
 		var thoughtsTop = $("#thoughtsHead").offset().top;
 		var contactTop = $("#contactHead").offset().top;
 		var navHeight = $("nav").height();
-		console.log(aboutTop, thoughtsTop, contactTop, winPos, navHeight);
 		if (winPos + navHeight > contactTop) {
-			console.log("yes3");
 			$("#contactNav").css("border-bottom", "solid 2px #000000");
 			$("#thoughtsNav").css("border-bottom", "none");
 			$("#aboutNav").css("border-bottom", "none");			
 		}
 		else if (winPos + navHeight > thoughtsTop) {
-			console.log("yes2");
 			$("#contactNav").css("border-bottom", "none");
 			$("#thoughtsNav").css("border-bottom", "solid 2px #000000");
 			$("#aboutNav").css("border-bottom", "none");			
 		}
 		else if (winPos + navHeight > aboutTop) {
-			console.log("Yes");
 			$("#contactNav").css("border-bottom", "none");
 			$("#thoughtsNav").css("border-bottom", "none");
 			$("#aboutNav").css("border-bottom", "solid 2px #000000");
@@ -66,20 +62,40 @@ $(document).ready(function() {
 			var col = Math.floor((1 - r) * 255);
 			col = col.toString(16);
 			$(this).css("border-bottom", "solid 2px #"+col+col+col);
+			$(this).css("cursor", "pointer");
 		}
 		else {
 			$(this).css("border-bottom", "solid 2px #000000");
+			$(this).css("cursor", "pointer");
 		}
 	}, function() {
 		$(this).css("border-bottom", "none");
 	});
 
 	// Animate scrolling
+	$("#navLogo").click(function() {
+		$('html, body').animate({
+			scrollTop: $("html").offset().top
+		}, 500);
+	});
+	$("#aboutNav").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#aboutHead").offset().top - $("nav").height() + 1
+		}, 500);
+	});
+	$("#thoughtsNav").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#thoughtsHead").offset().top - $("nav").height() + 1
+		}, 500);
+	});
+	$("#contactNav").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#contactHead").offset().top - $("nav").height() + 1
+		}, 500);
+	});
 
 });
 
 
 // TO DO
-// Tidy up email and crappy website link
-// Slow scroll 
 // Favicon?
