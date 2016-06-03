@@ -22,23 +22,34 @@
   <nav>
   <a id="navLogo" href="#">go away</a>
     <ul>
-      <li>About</li>
-      <li>Thoughts</li>
+      <li class="notEDA" id="aboutNav">About</li>
+      <li class="notEDA" id="thoughtsNav">Thoughts</li>
       <li class="EDA">EDA</li>
-      <li>Contact</li>
+      <li class="notEDA" id="contactNav">Contact</li>
     </ul>
   </nav>
-  <section id="about">
+  <section id="aboutHead">
     <h3>About</h3>
-    <p>Go Away is a web design and development firm owned and run by Miles Fitzsimons. Miles is currently a student at <span class="EDA">Enspiral Dev Academy</span>. Miles' clients have included international fashion houses, rocket scientists and robotic engineers.</p>
+    <p class="content">Go Away is a web design and development firm owned and run by Miles Fitzsimons. Miles is currently a student at <span class="EDA">Enspiral Dev Academy</span>. Miles' clients have included international fashion houses, rocket scientists and robotic engineers.</p>
   </section>
-  <section class="darkBackground">
+  <section class="darkBackground" id="thoughtsHead">
     <h3>Thoughts</h3>
-    <p>Miles wrote a number of technical and cultural blog posts during his studies. You can read them at his crappy website.</p>
+    <p class="content">Miles wrote a number of technical and cultural blog posts during his studies. You can read them at his crappy website.</p>
   </section>
-  <section>
+  <section id="contactHead">
     <h3>Contact</h3>
-    <p>Go his fdsjkdlfs fjijfdsio fdniljdfskl njklsdjklfds fjijfdsio fdniljdfskl njklsdjklfds fjijfdsio fdniljdfskl njklsdjklfds fjijfdsio fdniljdfskl njklsdjklfds fjijfdsio fdniljdfskl njklsdjklfds fjijfdsio fdniljdfskl njklsdjklfds fjijfdsio  of technical and cultural blog posts. You can read them here.</p>
+    <div class="content">
+    <!-- <img src="http://placehold.it/400x400" /> -->
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:600px;'><div id='gmap_canvas' style='height:400px;width:600px;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy template</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(-41.29690919999999,174.77421930000003),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-41.29690919999999,174.77421930000003)});infowindow = new google.maps.InfoWindow({content:'<strong>Go Away</strong><br>275 Cuba Street, Wellington, New Zealand<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+    <h4>Go Away Wellington</h4>
+    <h5>275 Cuba St<br>Te Aro<br>Wellington<br>6023</h5>
+    <h5>miles.fitzsimons@gmail.com</h5>
+    <h5>+64 22 032 8976</h5>
+    </div>
   </section>
+  <footer class="darkBackground">
+  <h6>Go Away &mdash; All Rights Reserved</h6>
+    
+  </footer>
 </body>
 </html>
